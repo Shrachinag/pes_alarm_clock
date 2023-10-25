@@ -1,6 +1,4 @@
-#pes_aclock
- Implementation of an Alarm Clock in Verilog
-This project carries out the design and development of a fully implementable Verilog code of a working digital
+#pes_aclock-> Implementation of an Alarm Clock in Verilog This project carries out the design and development of a fully implementable Verilog code of a working digital
 # Contents
 [alarm_clock](#alram_clock_introduction)
 [Iverilog and yosys installation](#iverilog-and-yosys-installation)
@@ -10,6 +8,7 @@ This project carries out the design and development of a fully implementable Ver
  ##aclock
  his design aims to apply the Verilog language into the
 development of a simple mechanism of a digital alarm clock. The block diagram for the proposed design is shown below:
+![image](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/d0b1b999-e0fd-41db-a91b-dc57ccb1f58d)
 
 ## Iverilog and yosys Installation
 - To install iverilog and gtkwave we type the following
@@ -40,17 +39,18 @@ First we will look at the waveform simulation of the program
 
 ![Screenshot from 2023-10-25 17-25-14](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/9c1feff8-f0c3-41bb-8635-6c4654aff1d6)
 - We first read the design and testbench file using the command
+'''
+![image](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/9da88444-9ae0-41ce-b134-b446e46da5cd)
+iverilog pes_aclock.v pes_aclock_tb.v
+'''
 
-
-```iverilog pes_aclock.v pes_aclock_tb.v
 - Then we type ```./a.out```
  to generate the .vcd file
 - Now we type
-'''
-gtkwave test.vcd
-'''
+'''gtkwave test.vcd'''
 
-![Screenshot from 2023-10-25 17-26-03](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/90cdaa7d-fa19-417b-a3f8-fa0cb366e30e)
+
+[Screenshot from 2023-10-25 17-26-03](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/90cdaa7d-fa19-417b-a3f8-fa0cb366e30e)
 
 the waveform is obtained is 
 
@@ -99,9 +99,10 @@ To see the waveform we type the command
 '''
 gtkwave test.vcd
 '''
+![image](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/83412427-69b3-404f-a661-cb15d1af2b0d)
 
 
-
+the sythesis and simulation are matching
 
 
 
