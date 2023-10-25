@@ -7,9 +7,9 @@
   - [GLS Process to verify alarm_clock][[#GLS-Process-to-verify-alarm-clock]
 
  
- ##aclock
- his design aims to apply the Verilog language into the
-development of a simple mechanism of a digital alarm clock. The block diagram for the proposed design is shown below:
+ ## a_clock
+-  this design aims to apply the Verilog language into the
+   development of a simple mechanism of a digital alarm clock. The block diagram for     the proposed design is shown below:
 ![image](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/d0b1b999-e0fd-41db-a91b-dc57ccb1f58d)
 
 ## Iverilog and yosys Installation
