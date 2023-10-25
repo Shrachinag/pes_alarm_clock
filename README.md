@@ -1,8 +1,10 @@
-# pes_aclock-> Implementation of an Alarm Clock in Verilog This project carries out the design and development of a fully implementable Verilog code of a working digital
+
+# pes_aclock
+  - [Implementation of an Alarm Clock in Verilog This project carries out the design and development of a fully implementable Verilog code of a working digital]
 # Contents
-[alarm_clock](#alram_clock_introduction)
-[Iverilog and yosys installation](#iverilog-and-yosys-installation)
- [GLS Process to verify alarm_clock][[#GLS-Process-to-verify-alarm-clock]
+- [alarm_clock](#alram_clock_introduction)
+ - [Iverilog and yosys installation](#iverilog-and-yosys-installation)
+  - [GLS Process to verify alarm_clock][[#GLS-Process-to-verify-alarm-clock]
 
  
  ##aclock
