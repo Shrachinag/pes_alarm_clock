@@ -40,9 +40,67 @@ First we will look at the waveform simulation of the program
 
 ![Screenshot from 2023-10-25 17-25-14](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/9c1feff8-f0c3-41bb-8635-6c4654aff1d6)
 - We first read the design and testbench file using the command
+
+
 ```iverilog pes_aclock.v pes_aclock_tb.v
-- Then we type ```./a.out``` to generate the .test=file
+- Then we type ```./a.out```
+ to generate the .vcd file
 - Now we type
+'''
+gtkwave test.vcd
+'''
+
+![Screenshot from 2023-10-25 17-26-03](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/90cdaa7d-fa19-417b-a3f8-fa0cb366e30e)
+
+the waveform is obtained is 
+
+
+Now we will synthesize the design and generate the netlist file.
+
+![Screenshot from 2023-10-25 19-12-36](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/02fa9693-09e8-4b6e-8393-9c2b5f5bdff3)
+
+'''
+read_liberty -lib sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog pes_aclock.v
+synth -top pes_aclock
+'''
+![Screenshot from 2023-10-25 19-31-19](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/acc13294-3573-448f-bd28-e34e75deb53f)
+
+![Screenshot from 2023-10-25 20-27-54](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/2b6cdac8-1580-40b0-b3c2-86e0bde7181b)
+
+![Screenshot from 2023-10-25 20-27-54](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/8df5b320-eb67-4808-a0f0-0069eadcb9eb)
+
+'''
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+'''
+![Screenshot from 2023-10-25 20-28-35](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/e1aba18a-9a6f-481c-b395-db6ce4518f70)
+
+
+we type show to display our design
+![Screenshot from 2023-10-25 20-29-34](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/2d79e2bf-8179-4162-a6ab-5f5cdb1e693d)
+
+
+
+To generate the netlist file we must type the command
+'''
+write_verilog -noattr pes_tff_netlist.v
+'''
+![Screenshot from 2023-10-25 20-31-16](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/571bdbe8-9c31-4cf9-8343-2a41c04a33ca)
+
+    Now using the netlist file, we verify the waveform once more
+
+![Screenshot from 2023-10-25 21-16-10](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/85bb7fce-3dba-4bfe-8a8a-00e31c855082)
+
+To read the design and test bench file we must use the command
+'''
+iverilog primitives.v sky130_fd_sc_hd.v pes_aclock _netlist.v pes_aclock_tb.v
+'''
+To see the waveform we type the command
+'''
+gtkwave test.vcd
+'''
+
+
 
 
 
