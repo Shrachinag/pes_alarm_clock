@@ -32,6 +32,7 @@ Open terminal and type the following to install IcarusVerilog and GTKWave:
 ```
 $   sudo apt-get update
 $   sudo apt-get install iverilog gtkwave
+!
 ```
 To clone this repository and run the netlist and the testbench, execute the following commands in  terminal:
 ```
@@ -41,7 +42,8 @@ $   cd iiitb_aclock
 $   iverilog iiitb_aclock.v iiitb_aclock_tb.v
 $   ./a.out
 $   gtkwave test.vcd
-```
+```[Screenshot from 2023-10-25 08-10-22](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/8a8e5375-d086-433d-9fb7-2f90b5750e63)
+
 End the a.out process after the GTKWave window opens to avoid unnecessarily filling up memory.
 
 ## Functional Characteristics
