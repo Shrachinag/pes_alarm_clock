@@ -37,12 +37,14 @@ $   sudo apt-get install iverilog gtkwave
 To clone this repository and run the netlist and the testbench, execute the following commands in  terminal:
 ```
 $   sudo apt install -y git
-$   git clone https://github.com/aamodbk/iiitb_aclock
-$   cd iiitb_aclock
-$   iverilog iiitb_aclock.v iiitb_aclock_tb.v
+$   
+$   cd pes_aclock
+$   iverilog `pes_aclock.v pes_aclock_tb.v
 $   ./a.out
 $   gtkwave test.vcd
-```[Screenshot from 2023-10-25 08-10-22](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/8a8e5375-d086-433d-9fb7-2f90b5750e63)
+![Screenshot from 2023-10-25 08-10-22](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/be3f8624-3d5a-459d-8ee6-4f82d0d0d5c2)
+
+
 
 End the a.out process after the GTKWave window opens to avoid unnecessarily filling up memory.
 
@@ -74,10 +76,10 @@ Create a Yosys script yosys_run.sh in the cloned `/iiitb_aclock` directory and t
 # read design
 
 read_liberty -lib lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_verilog iiitb_aclock.v
+read_verilog pes_aclock.v
 
 # generic synthesis
-synth -top iiitb_aclock
+synth -top pes_aclock
 
 # mapping to mycells.lib
 dfflibmap -liberty ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
