@@ -20,7 +20,7 @@ digits. Alarm can also be set upto the accuracy of minutes.
 
 ### Applications
 * Can be used as a digital clock
-* ![download](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/306d7a31-6de7-4f18-9b77-e0dc48d3f8a1)
+  (https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/306d7a31-6de7-4f18-9b77-e0dc48d3f8a1)
 
 * Allows setting of alarm at a decided time
 * Allows option to turn off alarm when it goes off
