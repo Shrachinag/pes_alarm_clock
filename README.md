@@ -6,7 +6,7 @@
  - [Iverilog and yosys installation](#iverilog-and-yosys-installation)
   - [GLS Process to verify alarm_clock][[#GLS-Process-to-verify-alarm-clock]
   - [Installation of ngspice magic and OpenLANE]
-    -   [OpenLANE Flow]
+    - [OpenLANE Flow]
 
  
  ## a_clock
