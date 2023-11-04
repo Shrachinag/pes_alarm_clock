@@ -206,9 +206,24 @@ Synthesis takes place in multiple steps:
 -   Optimizing the mapped netlist keeping the constraints set by the designer intact.
 -   ![Screenshot from 2023-11-04 21-37-18](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/345d20a2-5758-46cf-bd45-b31a4152f2dd)
 
+</details>
+Routing
+
+    Now to run routing we type
+
+
+![Screenshot from 2023-11-04 22-20-30](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/6ce4311e-f464-4e0f-82e5-b69b5b88d2ff)
 
 ![Screenshot from 2023-11-04 21-39-38](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/569be1dd-1a65-4e18-a21d-3c50c456a03c)
 
+## to view the design we type 
+```sh
+magic -T /home/nagesh/Desktop/sky130A.tech lef read ../../tmp/merged.nom.lef def read pes_aclock.def &
+```
+![Screenshot from 2023-11-04 22-46-48](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/cda0fbc9-8692-411d-95d9-90a0fd8beb34)
+
+## congention report
+![Screenshot from 2023-11-04 22-50-24](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/f28e5412-36ea-4639-8981-6b111c9b7352)
 
 
 The reports generated are given below
@@ -224,7 +239,23 @@ The reports generated are given below
 ![image](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/85fc3c69-ccc1-41f8-ad98-ee250878c4ca)
 
 
-###The reports generated are given below
+
+
+
+
+area report
+
+![Screenshot from 2023-11-04 22-19-17](https://github.com/Shrachinag/pes_alarm_clock/assets/119600435/b76601aa-dfd3-4059-8b52-8c600960da4a)
+
+```
+    Area = 243 u^2 17% utilisation
+    Internal Power = 6.77e-05 W 86.3% 
+    Switching Power = 1.08e-05 W 13.7%  
+    Leakage Power = 1.97e-10 W  0.0%
+    Total Power = 7.85e-05 W
+```
+
+
 
 
 
